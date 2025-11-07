@@ -1,14 +1,16 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import Singleton from "./utils/Singleton";  // ✅ 싱글톤 불러오기
+
+// 세 패턴 실행 함수 import
+import { runBuilderExample } from "./utils/Builder";
+import { runBridgeExample } from "./utils/Bridge";
+import { runStrategyExample } from "./utils/Strategy";
 
 const app = createApp(App);
 
-// ✅ 싱글톤 테스트
-const s1 = Singleton.getInstance();
-const s2 = Singleton.getInstance();
-
-s1.sayHello();
-console.log("같은 객체인가?", s1 === s2); // true
+// 실행 순서
+runBuilderExample();
+runBridgeExample();
+runStrategyExample();
 
 app.mount("#app");
