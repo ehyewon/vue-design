@@ -89,7 +89,10 @@ GoF의 대표적인 디자인 패턴 9가지를 직접 구현하고 콘솔 결�
 - Context(`PaymentContext`)가 전략(`PaymentStrategy`)을 실행.
 - 코드: `src/utils/Strategy.ts`
 
+---
+
 **🔍 실행 결과**
+- Builder, Bridge, Strategy 실행결과(한 번에 실행)
 <img src="./vue-design_capture/result.png" width="500"/>
 
 ---
